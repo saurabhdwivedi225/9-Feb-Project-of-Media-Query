@@ -1,0 +1,88 @@
+/* Media query using both min-width and max-width  */
+body{
+  height: 91.5vh;
+  background-color: #7FFFD5;
+  font-size: 25px;
+  text-align: center;
+}
+#laptop-large, #laptop, #table, #mobile{
+display: none;
+}
+/* For Mobile  */
+@media only screen and (min-width:0px){
+  #mobile{
+             display: block;
+  }
+   #tablet{
+         display:none;
+  }
+  
+  body{
+background-color:#CA3142;
+border-radius: 50px;
+}
+/* For Tablet  */
+}
+@media only screen and (min-width:425px)
+{
+  #mobile{
+    display: none;
+  }
+  #tablet{
+      display: block;
+  }
+
+  body{
+background-color: #75FBFD;
+
+}
+}
+/* For Laptop  */
+@media only screen and (min-width:768px) {
+  #mobile{
+    display:none;
+   }
+  #tablet{
+    display: none;
+    } 
+#laptop{
+display: block;
+}
+
+body{
+background-color: #B1882F;
+
+}
+}
+/* For Large Screen  */
+@media only screen and (min-width:1024px){
+  #laptop{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+
+  #laptop-large{
+display: block;
+  }
+ 
+  body{
+      background-color: #208B21;
+     
+  }
+}
+@media only screen and (min-width:1440px){
+  #mobile{
+    display: none;
+  }
+  #tablet{
+    display: none;
+  }
+  #laptop{
+    display: none;
+  }
+  #large-laptop{
+    display:block;
+  }
+}
